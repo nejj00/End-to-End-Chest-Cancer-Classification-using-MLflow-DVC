@@ -165,3 +165,9 @@ artifacts/*
 mlartifacts
 mlruns
 
+# Airflow
+logs
+airflow.cfg
+airflow.db
+webserver_config.py
+airflow-webserver.pid

@@ -145,3 +145,24 @@ DVC
 
     ECR_REPOSITORY_NAME = simple-app
 
+# Apache Airflow
+
+`export AIRFLOW_HOME=~/./End-to-End-Chest-Cancer-Classification-using-MLflow-DVC`
+
+# Possible errors
+
+## MLFlow
+
+If you are getting a DictWrapper error from logging a tensoflow model:
+
+ - Getting the Python version down to 3.10 and tensorflow version down to 2.12 helped
+ - recreating the whole virtual environment also helped (for some reason); also delete artifacts folder;
+
+# Starting commands
+
+`mlflow server --host localhost --port 5000`
+
+```bash
+   airflow webserver -p 8080
+   airflow scheduler
+```
